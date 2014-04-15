@@ -6,7 +6,7 @@
  */
 
 #include <iostream>
-#include <cstdlib>
+#include <sstream>
 #include "Sorter.h"
 
 Sorter::Sorter() : numberOfInputData(0), currentPosition(0), inputData(NULL) {
@@ -29,7 +29,7 @@ void Sorter::sort() {
 
 void Sorter::prepareInputDataArray() {
 	for(int i = 0; i < numberOfInputData; ++i) {
-		inputDatas[i] = std::atoi(inputData[i+1]);
+		inputDatas[i] = stringToInteger(inputData[i+1]);
 	}
 }
 
@@ -69,4 +69,11 @@ void Sorter::printResult() {
 	for(int i = 0; i < numberOfInputData; ++i) {
 		std::cout << sortedData[i] << std::endl;
 	}
+}
+
+int Sorter::stringToInteger(std::string numberOfString) {
+	std::istringstream iss(numberOfString);
+	int num(0);
+	iss >> num;
+	return num;
 }

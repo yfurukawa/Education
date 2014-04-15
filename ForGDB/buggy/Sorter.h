@@ -5,6 +5,8 @@
  *      Author: yoshi
  */
 
+#include <string>
+
 #ifndef SORTER_H_
 #define SORTER_H_
 
@@ -27,6 +29,7 @@ private:
 	void insert(int data);
 	void processData();
 	void printResult();
+	int stringToInteger(std::string numberOfString);
 };
 
 #endif /* SORTER_H_ */
