@@ -1,17 +1,16 @@
 CC = g++
 RM = rm -f
 INCLUDE = -I/usr/incude -I/usr/local/include
-LIB_DIR = -L/usr/lib -L/usr/local/lib
+LIB_DIR = -L/usr/lib64 -L/usr/local/lib64 -L/usr/lib -L/usr/local/lib
 LIB =
-OPT = -O0 -g3 -Wall -Wnon-virtual-dtor -Woverloaded-virtual -fmessage-length=0 -fprofile-arcs -ftest-coverage
+OPT = -O0 -g3 -Wall
 TARGET = sorter
 SRC= main.cpp Sorter.cpp
-OBJ= main.o Sorter.o
 
-all: $(OBJ) 
-	$(CC) $(INCLUDE) $(LIB_DIR) $(OPT) -o $(TARGET) $(OBJ)
+all: $(SRC:.cpp=.o) 
+	$(CC) $(INCLUDE) $(LIB_DIR) $(OPT) -o $(TARGET) $(SRC:.cpp=.o)
 
-$(OBJ): $(SRC)
+$(SRC:.cpp=.o): $(SRC)
 	$(CC) $(INCLUDE) $(LIB_DIR) $(OPT) -c $(SRC)
 
 	
