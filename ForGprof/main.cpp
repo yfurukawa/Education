@@ -13,6 +13,7 @@ int a(void) {
     {
         g+=i;
     }
+
     return g;
 }
 
@@ -22,6 +23,9 @@ int b(void) {
     {
         g+=i;
     }
+
+    a();
+
     return g;
 }
 
