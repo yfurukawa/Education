@@ -1,4 +1,4 @@
-CC = g++
+CC = /usr/bin/g++
 RM = rm -f
 INCLUDE = -I/usr/incude -I/usr/local/include
 LIB_DIR = -L/usr/lib -L/usr/local/lib
