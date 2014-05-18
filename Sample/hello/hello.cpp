@@ -1,7 +1,13 @@
-#include <iostream>
+/**
+ * Copyright 2014/05/18
+ *
+*/
+#include <cstdio>
+#include <string>
 
 int main(int argc, char* argv[]) {
-	std::cout << "Hello World!" << std::endl;
-	return 0;
+  std::string str = "Hello World";
+  printf("%s\n", str.c_str());
+  return 0;
 }
 

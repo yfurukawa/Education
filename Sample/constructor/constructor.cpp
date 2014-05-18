@@ -1,10 +1,14 @@
-#include <iostream>
-#include "constructor.h"
+/**
+ * Copyright 2014/05/19 YFurukawa
+ *
+*/
+#include <cstdio>
+#include "./constructor.h"
 
 constructor::constructor() {
-	std::cout << "Constructed" << std::endl;
+  printf("Constructed\n");
 }
 
 constructor::~constructor() {
-	std::cout << "Destructed" << std::endl;
+  printf("Destructed\n");
 }

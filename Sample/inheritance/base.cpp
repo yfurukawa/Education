@@ -1,10 +1,14 @@
-#include <iostream>
-#include "base.h"
+/**
+ * Copyright 2014/05/19 YFurukawa
+ *
+*/
+#include <cstdio>
+#include "./base.h"
 
 base::base() {
-	std::cout << "Constructed base instance" << std::endl;
+  printf("Constructed base instance\n");
 }
 
 base::~base() {
-	std::cout << "Destructed base instance" << std::endl;
+  printf("Destructed base instance\n");
 }

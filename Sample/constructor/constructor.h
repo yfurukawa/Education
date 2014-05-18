@@ -1,21 +1,21 @@
 /**
  * constructor.h<br>
+ * Copyright 2014/05/19 YFurukawa
  *
  */
 
-#ifndef CONSTRUCTOR_H_
-#define CONSTRUCTOR_H_
+#ifndef SAMPLE_CONSTRUCTOR_CONSTRUCTOR_H_
+#define SAMPLE_CONSTRUCTOR_CONSTRUCTOR_H_
 
 class constructor {
-public:
-	//! Constractor
-	constructor();
-	//! Destructor
-	virtual ~constructor();
+ public:
+    //! Constractor
+    constructor();
+    //! Destructor
+    virtual ~constructor();
 
-protected:
-
-private:
+ protected:
+ private:
 };
 
-#endif
+#endif  // SAMPLE_CONSTRUCTOR_CONSTRUCTOR_H_

@@ -1,11 +1,15 @@
-#include <iostream>
-#include "sub.h"
+/**
+ * Copyright 2014/05/19 YFurukawa
+ *
+*/
+#include <cstdio>
+#include "./sub.h"
 
 
 sub::sub() {
-	std::cout << "Constructed sub instance" << std::endl;
+  printf("Constructed sub instance\n");
 }
 
 sub::~sub() {
-	std::cout << "Destructed sub instance" << std::endl;
+  printf("Destructed sub instance\n");
 }
